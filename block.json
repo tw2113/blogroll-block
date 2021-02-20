@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "tw2113/blogroll-block",
+	"title": "Blogroll Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "WordPress Blogroll Block",
+	"textdomain": "blogroll-block",
+	"supports": {
+		"html": true
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
