@@ -10,7 +10,7 @@
  *
  * @package         tw2113-blogroll-block
  */
-namespace tw2113;
+namespace tw2113_blogroll_block;
 
 function blogroll_block_init() {
 	$dir = __DIR__;
@@ -53,7 +53,7 @@ function blogroll_block_init() {
 			'editor_script' => 'tw2113-blogroll-block-editor',
 			'editor_style'  => 'tw2113-blogroll-block-editor',
 			'style'         => 'tw2113-blogroll-block',
-			'render_callback' => __NAMESPACE__ . '\construct_bookmarks_list',
+			'render_callback' => __NAMESPACE__ . '\blogroll_block_construct_bookmarks_list',
 			'attributes' => [
 				'orderby' => [
 					'type' => 'string',
@@ -127,7 +127,7 @@ function blogroll_block_init() {
 }
 add_action( 'init', __NAMESPACE__ . '\blogroll_block_init' );
 
-function construct_bookmarks_list( $attributes ) {
+function blogroll_block_construct_bookmarks_list( $attributes ) {
 	$args = [];
 	$args = [
 		'echo' => false,
