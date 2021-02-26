@@ -17,7 +17,7 @@ function blogroll_block_init() {
 
 	$script_asset_path = "$dir/build/index.asset.php";
 	if ( ! file_exists( $script_asset_path ) ) {
-		throw new Error(
+		throw new \Error(
 			'You need to run `npm start` or `npm run build` for the "tw2113/blogroll-block" block first.'
 		);
 	}
