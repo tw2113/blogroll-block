@@ -149,3 +149,6 @@ function blogroll_block_construct_bookmarks_list( $attributes ) {
 		$args
 	);
 }
+
+// Aid users in enabling the links menu without having to install other plugins or search how to.
+add_filter( 'pre_option_link_manager_enabled', '__return_true' );
