@@ -9,7 +9,7 @@ import './editor.scss';
 
 import {
 	PanelBody,
-	Placeholder,
+	ExternalLink,
 	SelectControl,
 	ToggleControl,
 	TextControl,
@@ -86,6 +86,7 @@ export default function Edit( props ) {
 				<PanelBody
 					title={ __( 'Blogroll Arguments', 'blogroll-block' ) }
 				>
+					<p><ExternalLink href="https://developer.wordpress.org/reference/functions/wp_list_bookmarks/">{ __( 'Read about wp_list_bookmarks', 'blogroll-block' ) }</ExternalLink></p>
 					<SelectControl
 						label={ __( 'Order', 'blogroll-block' ) }
 						value={ order }
