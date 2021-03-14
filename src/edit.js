@@ -155,7 +155,7 @@ export default function Edit( props ) {
 
 					<TextControl
 						label={ __( 'Title Li', 'blogroll-block' ) }
-						help={ __( 'What to show before the links appear.', 'blogroll-block' ) }
+						help={ __( 'What to show before the links appear. Only shows when categorize is false', 'blogroll-block' ) }
 						value={ title_li }
 						onChange={title_li => setAttributes({title_li})}
 					/>
