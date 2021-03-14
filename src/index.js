@@ -21,12 +21,15 @@ export default registerBlockType( 'tw2113/blogroll-block', {
 	attributes: {
 		orderby: {
 			type: 'string',
+			default: 'name',
 		},
 		order: {
 			type: 'string',
+			default: 'ASC',
 		},
 		roll_limit: {
 			type: 'string',
+			default: '-1',
 		},
 		category: {
 			type: 'string',
@@ -50,27 +53,35 @@ export default registerBlockType( 'tw2113/blogroll-block', {
 		},
 		title_li: {
 			type: 'string',
+			default: 'Bookmarks',
 		},
 		title_before: {
 			type: 'string',
+			default: '<h2>',
 		},
 		title_after: {
 			type: 'string',
+			default: '</h2>',
 		},
 		roll_class: {
 			type: 'string',
+			default: 'linkcat',
 		},
 		category_before: {
 			type: 'string',
+			default: '<li id="%id" class="%class">',
 		},
 		category_after: {
 			type: 'string',
+			default: '</li>',
 		},
 		category_orderby: {
 			type: 'string',
+			default: 'name',
 		},
 		category_order: {
 			type: 'string',
+			default: 'ASC',
 		},
 	},
 	category: 'widgets',
