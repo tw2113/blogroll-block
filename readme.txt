@@ -23,7 +23,7 @@ Source version can be found at [https://github.com/tw2113/blogroll-block/](https
 
 == Changelog ==
 
-= 1.1.0 - TBD =
+= 1.1.0 - 2021-03-13 =
 * Added: Live preview in the editor.
 * Added: Enabled the Link Manager menu without requiring "Link Manager" plugin.
 * Updated: Changed "Category Order" to dropdown.
