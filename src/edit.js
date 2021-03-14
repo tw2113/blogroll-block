@@ -202,11 +202,15 @@ export default function Edit( props ) {
 						onChange={category_orderby => setAttributes({category_orderby})}
 					/>
 
-					<TextControl
+					<SelectControl
 						label={ __( 'Category order', 'blogroll-block' ) }
-						help={ __( 'Whether to order categories in ascending or descending order if $categorize is true.', 'blogroll-block' ) }
 						value={ category_order }
-						onChange={ category_order => setAttributes({category_order})}
+						help={ __( 'Whether to order categories in ascending or descending order if $categorize is true.', 'blogroll-block' ) }
+						options={ [
+							{ label: 'ASC', value: 'ASC' },
+							{ label: 'DESC', value: 'DESC' },
+						] }
+						onChange={category_order => setAttributes({category_order})}
 					/>
 				</PanelBody>
 			</InspectorControls>
