@@ -4,6 +4,7 @@ import { __ } from '@wordpress/i18n';
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
+import ServerSideRender from '@wordpress/server-side-render';
 import './editor.scss';
 
 import {
@@ -58,8 +59,28 @@ export default function Edit( props ) {
 	return (
 		<div {...useBlockProps()}>
 			{ (
-				<Placeholder icon={ 'book' } label={ __( 'WordPress Developer Reference', 'blogroll-block' ) } instructions="https://developer.wordpress.org/reference/functions/wp_list_bookmarks/" />
-
+				<ServerSideRender
+					block="tw2113/blogroll-block"
+					attributes={ {
+						order: order,
+						hide_invisible: hide_invisible,
+						show_updated: show_updated,
+						categorize: categorize,
+						show_description: show_description,
+						orderby: orderby,
+						roll_limit: roll_limit,
+						category: category,
+						category_name: category_name,
+						title_li: title_li,
+						title_before: title_before,
+						title_after: title_after,
+						roll_class: roll_class,
+						category_before: category_before,
+						category_after: category_after,
+						category_orderby: category_orderby,
+						category_order: category_order
+					} }
+				/>
 			) }
 			<InspectorControls>
 				<PanelBody
