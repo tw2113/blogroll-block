@@ -4,10 +4,10 @@
  * Description:     WordPress Blogroll, block edition
  * Version:         1.1.0
  * Author:          Michael Beckwith
+ * Author URI:      https://michaelbox.net
  * License:         GPL-2.0-or-later
  * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:     blogroll-block
- *
  * @package         tw2113-blogroll-block
  */
 namespace tw2113_blogroll_block;
