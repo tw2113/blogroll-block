@@ -35,6 +35,9 @@ export default function Edit( props ) {
 			category_after,
 			category_orderby,
 			category_order,
+			show_rating,
+			show_images,
+			show_name,
 		},
 		setAttributes,
 	} = props;
@@ -53,6 +56,16 @@ export default function Edit( props ) {
 
 	function onChangeShowDescription() {
 		setAttributes( { show_description: ! show_description } );
+	}
+
+	function onChangeShowRating() {
+		setAttributes( { show_rating: ! show_rating } );
+	}
+	function onChangeShowImages() {
+		setAttributes( { show_images: ! show_images } );
+	}
+	function onChangeShowName() {
+		setAttributes( { show_name: ! show_name } );
 	}
 
 	return (
@@ -78,6 +91,9 @@ export default function Edit( props ) {
 						category_after,
 						category_orderby,
 						category_order,
+						show_rating,
+						show_images,
+						show_name,
 					} }
 				/>
 			}
@@ -291,6 +307,37 @@ export default function Edit( props ) {
 						onChange={ ( category_order ) =>
 							setAttributes( { category_order } )
 						}
+					/>
+					<h3>{__(
+						'Extras',
+						'blogroll-block'
+					)}</h3>
+					<ToggleControl
+						label={__('Show rating', 'blogroll-block')}
+						help={__(
+							'Whether to show the bookmark rating.',
+							'blogroll-block'
+						)}
+						checked={!!show_rating}
+						onChange={onChangeShowRating}
+					/>
+					<ToggleControl
+						label={__('Show image', 'blogroll-block')}
+						help={__(
+							'Whether to show the bookmark image.',
+							'blogroll-block'
+						)}
+						checked={!!show_images}
+						onChange={onChangeShowImages}
+					/>
+					<ToggleControl
+						label={__('Show name', 'blogroll-block')}
+						help={__(
+							'Whether to show the bookmark name with image.',
+							'blogroll-block'
+						)}
+						checked={!!show_name}
+						onChange={onChangeShowName}
 					/>
 				</PanelBody>
 			</InspectorControls>

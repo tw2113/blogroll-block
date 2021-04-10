@@ -121,6 +121,18 @@ function blogroll_block_init() {
 					'type' => 'string',
 					'default' => 'ASC',
 				],
+				'show_rating' => [
+					'type'    => 'boolean',
+					'default' => false,
+				],
+				'show_images' => [
+					'type'    => 'boolean',
+					'default' => true,
+				],
+				'show_name' => [
+					'type'    => 'boolean',
+					'default' => false,
+				],
 			],
 		]
 	);
