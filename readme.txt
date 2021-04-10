@@ -3,7 +3,7 @@ Contributors:      tw2113
 Tags:              block
 Requires at least: 5.6.0
 Tested up to:      5.7.0
-Stable tag:        1.1.0
+Stable tag:        1.2.0
 Requires PHP:      7.0.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -22,6 +22,11 @@ Source version can be found at [https://github.com/tw2113/blogroll-block/](https
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+
+= 1.2.0 - 2021-04-09 =
+* Added: Support for showing bookmarks' rating
+* Added: Support for showing bookmarks' image
+* Added: Support for showing bookmarks' name with image
 
 = 1.1.0 - 2021-03-13 =
 * Added: Live preview in the editor.
