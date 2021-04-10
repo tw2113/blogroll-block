@@ -14,10 +14,7 @@ export default registerBlockType( 'tw2113/blogroll-block', {
 	 */
 	apiVersion: 2,
 	title: __( 'Blogroll Block', 'blogroll-block' ),
-	description: __(
-		'WordPress Blogroll Block',
-		'blogroll-block'
-	),
+	description: __( 'WordPress Blogroll Block', 'blogroll-block' ),
 	attributes: {
 		orderby: {
 			type: 'string',
