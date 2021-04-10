@@ -2,12 +2,12 @@
 /**
  * Plugin Name:     Blogroll Block
  * Description:     WordPress Blogroll, block edition
- * Version:         1.1.0
+ * Version:         1.2.0
  * Author:          Michael Beckwith
+ * Author URI:      https://michaelbox.net
  * License:         GPL-2.0-or-later
  * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:     blogroll-block
- *
  * @package         tw2113-blogroll-block
  */
 namespace tw2113_blogroll_block;
@@ -120,6 +120,18 @@ function blogroll_block_init() {
 				'category_order' => [
 					'type' => 'string',
 					'default' => 'ASC',
+				],
+				'show_rating' => [
+					'type'    => 'boolean',
+					'default' => false,
+				],
+				'show_images' => [
+					'type'    => 'boolean',
+					'default' => true,
+				],
+				'show_name' => [
+					'type'    => 'boolean',
+					'default' => false,
 				],
 			],
 		]
