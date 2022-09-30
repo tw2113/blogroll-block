@@ -1,15 +1,100 @@
 {
-	"apiVersion": 2,
-	"name": "tw2113/blogroll-block",
-	"title": "Blogroll Block",
-	"category": "widgets",
-	"icon": "smiley",
-	"description": "WordPress Blogroll Block",
-	"textdomain": "blogroll-block",
-	"supports": {
-		"html": true
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "tw2113/blogroll-block",
+  "title": "Blogroll Block",
+  "version": "1.3.0",
+  "category": "widgets",
+  "icon": "book-alt",
+  "description": "WordPress Blogroll Block",
+  "keywords": [ "links", "roll", "blogroll" ],
+  "textdomain": "blogroll-block",
+  "supports": {
+	  "html": true
+  },
+  "attributes": {
+	"orderby": {
+	  "type": "string",
+	  "default": "name"
 	},
-	"editorScript": "file:./build/index.js",
-	"editorStyle": "file:./build/index.css",
-	"style": "file:./build/style-index.css"
+	"order": {
+	  "type": "string",
+	  "default": "ASC"
+	},
+	"roll_limit": {
+	  "type": "number",
+	  "default": 4
+	},
+	"category": {
+	  "type": "string"
+	},
+	"category_name": {
+	  "type": "string"
+	},
+	"hide_invisible": {
+	  "type": "boolean",
+	  "default": true
+	},
+	"show_updated": {
+	  "type": "boolean"
+	},
+	"categorize": {
+	  "type": "boolean",
+	  "default": true
+	},
+	"show_description": {
+	  "type": "boolean"
+	},
+	"title_li": {
+	  "type": "string",
+	  "default": "Bookmarks"
+	},
+	"title_before": {
+	  "type": "string",
+	  "default": "<h2>"
+	},
+	"title_after": {
+	  "type": "string",
+	  "default": ",</h2>"
+	},
+	"roll_class": {
+	  "type": "string",
+	  "default": "linkcat"
+	},
+	"category_before": {
+	  "type": "string",
+	  "default": "<li id=\"%id\" class=\"%class\">"
+	},
+	"category_after": {
+	  "type": "string",
+	  "default": "</li>"
+	},
+	"category_orderby": {
+	  "type": "string",
+	  "default": "name"
+	},
+	"category_order": {
+	  "type": "string",
+	  "default": "ASC"
+	},
+	"show_rating": {
+	  "type": "boolean",
+	  "default": false
+	},
+	"show_images": {
+	  "type": "boolean",
+	  "default": true
+	},
+	"show_name": {
+	  "type": "boolean",
+	  "default": false
+	},
+	"list_type": {
+	  "type": "string",
+	  "default": "ul"
+	}
+  },
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css"
 }

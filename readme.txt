@@ -1,9 +1,9 @@
 === Blogroll Block ===
 Contributors:      tw2113
 Tags:              block
-Requires at least: 5.6.0
-Tested up to:      5.7.0
-Stable tag:        1.2.0
+Requires at least: 5.8.0
+Tested up to:      6.0.2
+Stable tag:        1.3.0
 Requires PHP:      7.0.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -22,6 +22,11 @@ Source version can be found at [https://github.com/tw2113/blogroll-block/](https
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+
+= 1.3.0 - 2022-09-30 =
+* Added: Option to specify list type for wrapping output. Default: unordered list.
+* Updated: Revised block.json metadata registration.
+* Updated: Changed Limit to a range slider for easier amount to show selection.
 
 = 1.2.0 - 2021-04-09 =
 * Added: Support for showing bookmarks' rating

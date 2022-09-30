@@ -13,6 +13,8 @@ import {
 	SelectControl,
 	ToggleControl,
 	TextControl,
+	RadioControl,
+	RangeControl,
 } from '@wordpress/components';
 
 export default function Edit( props ) {
@@ -38,6 +40,7 @@ export default function Edit( props ) {
 			show_rating,
 			show_images,
 			show_name,
+			list_type,
 		},
 		setAttributes,
 	} = props;
@@ -109,6 +112,15 @@ export default function Edit( props ) {
 							) }
 						</ExternalLink>
 					</p>
+					<RadioControl
+						label={ __( 'List type', 'blogroll-block' ) }
+						selected={ list_type }
+						options={ [
+							{ label: __( 'Unordered - Display bullet points next to each item', 'blogroll-block' ), value: 'ul' },
+							{ label: __( 'Ordered - Display numbers 1, 2, 3, etc next to each item', 'blogroll-block' ), value: 'ol' },
+						] }
+						onChange={ ( list_type ) => setAttributes( { list_type } ) }
+					/>
 					<SelectControl
 						label={ __( 'Order', 'blogroll-block' ) }
 						value={ order }
@@ -173,7 +185,7 @@ export default function Edit( props ) {
 						onChange={ ( orderby ) => setAttributes( { orderby } ) }
 					/>
 
-					<TextControl
+					<RangeControl
 						label={ __( 'Limit', 'blogroll-block' ) }
 						help={ __(
 							'Amount of bookmarks to display. Accepts 1+ or -1 for all.',
@@ -183,6 +195,8 @@ export default function Edit( props ) {
 						onChange={ ( roll_limit ) =>
 							setAttributes( { roll_limit } )
 						}
+						min={ -1 }
+						max={ 100 }
 					/>
 
 					<TextControl
