@@ -55,7 +55,7 @@
 	},
 	"title_after": {
 	  "type": "string",
-	  "default": ",</h2>"
+	  "default": "</h2>"
 	},
 	"roll_class": {
 	  "type": "string",
