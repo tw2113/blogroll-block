@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Blogroll Block
  * Description:     WordPress Blogroll, block edition
- * Version:         1.3.0
+ * Version:         1.3.1
  * Author:          Michael Beckwith
  * Author URI:      https://michaelbox.net
  * License:         GPL-2.0-or-later
