@@ -1,23 +1,26 @@
 {
 	"name": "blogroll-block",
-	"version": "1.0.0",
+	"version": "1.3.3",
 	"description": "WordPress Blogroll Block",
 	"author": "Michael Beckwith",
 	"license": "GPL-2.0-or-later",
-	"keywords": ["blogroll"],
+	"keywords": [
+		"blogroll"
+	],
 	"homepage": "https://michaelbox.net",
 	"repository": "https://github.com/tw2113/blogroll-block/issues",
 	"bugs": "https://github.com/tw2113/blogroll-block/issues",
 	"main": "build/index.js",
 	"dependencies": {
-		"@wordpress/block-editor": "^5.2.6",
-		"@wordpress/blocks": "^8.0.1",
-		"@wordpress/components": "^13.0.1",
-		"@wordpress/i18n": "^3.18.0",
-		"@wordpress/server-side-render": "^1.20.8"
+		"@wordpress/block-editor": "^12",
+		"@wordpress/blocks": "^12",
+		"@wordpress/components": "^25",
+		"@wordpress/dependency-extraction-webpack-plugin": "^4",
+		"@wordpress/i18n": "^4",
+		"@wordpress/server-side-render": "^4"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^14.1.0"
+		"@wordpress/scripts": "^26"
 	},
 	"scripts": {
 		"build": "wp-scripts build",
