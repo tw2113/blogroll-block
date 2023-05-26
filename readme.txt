@@ -2,8 +2,8 @@
 Contributors:      tw2113
 Tags:              block
 Requires at least: 5.8.0
-Tested up to:      6.2.0
-Stable tag:        1.3.2
+Tested up to:      6.2.2
+Stable tag:        1.3.3
 Requires PHP:      7.0.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -22,6 +22,9 @@ Source version can be found at [https://github.com/tw2113/blogroll-block/](https
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+
+= 1.3.3 - 2023-05-26 =
+* Updated: Confirmed compatibility with WordPress 6.2.2
 
 = 1.3.2 - 2023-03-31 =
 * Updated: Confirmed compatibility with WordPress 6.2
