@@ -14,13 +14,14 @@
 	"dependencies": {
 		"@wordpress/block-editor": "^12",
 		"@wordpress/blocks": "^12",
-		"@wordpress/components": "^25",
-		"@wordpress/dependency-extraction-webpack-plugin": "^4",
+		"@wordpress/components": "^27",
+		"@wordpress/dependency-extraction-webpack-plugin": "^5",
 		"@wordpress/i18n": "^4",
-		"@wordpress/server-side-render": "^4"
+		"@wordpress/server-side-render": "^4",
+		"npm-check-updates": "^16.14.15"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^26"
+		"@wordpress/scripts": "^27"
 	},
 	"scripts": {
 		"build": "wp-scripts build",
