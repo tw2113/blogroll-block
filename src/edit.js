@@ -1,8 +1,4 @@
 import { __ } from '@wordpress/i18n';
-
-/**
- * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
- */
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import ServerSideRender from '@wordpress/server-side-render';
 import './editor.scss';
@@ -322,34 +318,34 @@ export default function Edit( props ) {
 							setAttributes( { category_order } )
 						}
 					/>
-					<h3>{__(
+					<h3>{ __(
 						'Extras',
 						'blogroll-block'
-					)}</h3>
+					) }</h3>
 					<ToggleControl
-						label={__('Show rating', 'blogroll-block')}
-						help={__(
+						label={ __('Show rating', 'blogroll-block') }
+						help={ __(
 							'Whether to show the bookmark rating.',
 							'blogroll-block'
-						)}
+						) }
 						checked={!!show_rating}
 						onChange={onChangeShowRating}
 					/>
 					<ToggleControl
-						label={__('Show image', 'blogroll-block')}
-						help={__(
+						label={ __('Show image', 'blogroll-block') }
+						help={ __(
 							'Whether to show the bookmark image.',
 							'blogroll-block'
-						)}
+						) }
 						checked={!!show_images}
 						onChange={onChangeShowImages}
 					/>
 					<ToggleControl
-						label={__('Show name', 'blogroll-block')}
-						help={__(
+						label={ __('Show name', 'blogroll-block') }
+						help={ __(
 							'Whether to show the bookmark name with image.',
 							'blogroll-block'
-						)}
+						) }
 						checked={!!show_name}
 						onChange={onChangeShowName}
 					/>
